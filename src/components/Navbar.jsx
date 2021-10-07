@@ -5,14 +5,14 @@ import {
   COMMENT_ROUTE,
   FAVORITE_ROUTE,
   MAIN_ROUTE,
-  USER_ROUTE
+  USERS_ROUTE
 } from '../utils/const'
 
 function NavBar() {
   const [active, setActive] = useState()
 
   const links = [
-    { route: USER_ROUTE, name: 'Users' },
+    { route: USERS_ROUTE, name: 'Users' },
     { route: FAVORITE_ROUTE, name: 'Favorites' },
     { route: COMMENT_ROUTE, name: 'Leave comment or feedback' }
   ]
