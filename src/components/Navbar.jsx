@@ -24,7 +24,10 @@ function NavBar() {
           role='button'
           className='me-3 text-light'
           style={{ textDecoration: 'none', fontSize: '1.5rem' }}
-          onClick={() => setActive(null)}
+          onClick={() => {
+            setActive(null)
+            document.title = 'Personal site'
+          }}
         >
           Dream Team Hakaton
         </NavLink>
@@ -44,7 +47,10 @@ function NavBar() {
                   className={
                     active === link.name ? 'border-0 active' : 'border-0'
                   }
-                  onClick={() => setActive(link.name)}
+                  onClick={() => {
+                    setActive(link.name)
+                    document.title = link.name
+                  }}
                 >
                   {link.name}
                 </Button>
