@@ -1,10 +1,12 @@
 import './App.css'
+import AppRouter from './components/AppRouter'
+import Layout from './UI/Layout'
 
 function App() {
   return (
-    <div className='d-flex justify-content-center align-items-center'>
-      <h1>Working</h1>
-    </div>
+    <Layout>
+      <AppRouter />
+    </Layout>
   )
 }
 

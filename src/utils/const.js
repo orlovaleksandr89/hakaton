@@ -1,0 +1,5 @@
+export const MAIN_ROUTE = '/'
+export const USER_ROUTE = '/user/:id?'
+export const ERROR_ROUTE = '/error'
+export const FAVORITE_ROUTE = '/favorite'
+export const COMMENT_ROUTE = '/comments'
