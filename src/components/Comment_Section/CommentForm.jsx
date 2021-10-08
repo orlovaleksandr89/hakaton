@@ -65,7 +65,7 @@ function CommentForm({ setComments }) {
       </Row>
       <div className='d-flex align-self-end'>
         <Button type='submit' className='mt-4' variant={'outline-dark'}>
-          Submit form
+          Post your comment
         </Button>
       </div>
     </Form>
