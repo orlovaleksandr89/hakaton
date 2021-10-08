@@ -1,5 +1,6 @@
 {
   "name": "hakaton",
+  "homepage": "https://orlovaleksandr89.github.io/hakaton/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
