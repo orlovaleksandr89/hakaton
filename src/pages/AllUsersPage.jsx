@@ -1,7 +1,8 @@
 import React from 'react'
+import MemberList from '../components/MemberList'
 
 function AllUsersPage() {
-  return <div>All users</div>
+  return <MemberList />
 }
 
 export default AllUsersPage
