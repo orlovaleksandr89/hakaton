@@ -18,7 +18,7 @@ const MemberRuslan = ({ id }) => {
             {memberById.name}
             {memberById.isLeader ? (
               <BadgeMember color="success" text="Team Leader" />
-            ) : null}
+            ) : <BadgeMember color='warning' text='Developer' />}
           </h1>
           <span>{`Возраст: ` + memberById.age}</span>
           <p>{`О себе: ` + memberById.about}</p>

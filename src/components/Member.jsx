@@ -22,7 +22,7 @@ const Member = ({ members }) => {
                   {member.name}
                   {member.isLeader ? (
                     <BadgeMember color='success' text='Team Leader' />
-                  ) : null}
+                  ) : <BadgeMember color='warning' text='Developer' />}
                 </h5>
                 <h5 className='card-tite'>{`Возраст: ` + member.age}</h5>
                 <p className='card-text'>{`О себе: ` + member.about}</p>
