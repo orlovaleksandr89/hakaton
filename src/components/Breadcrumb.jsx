@@ -4,7 +4,6 @@ import { withRouter } from 'react-router'
 import { MAIN_ROUTE } from '../utils/const'
 
 function BreadcrumbList(props) {
-  // const lastIndex = (index) => index === crumbs.length - 1
   const { history, location, setActive } = props
   const { pathname } = location
   const pathnames = pathname.split('/').filter((path) => path)

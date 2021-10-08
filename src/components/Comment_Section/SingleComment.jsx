@@ -1,19 +1,15 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 
-function SingleComment({ comments }) {
+function SingleComment({ nickname, date, comment }) {
   return (
-    <div className='d-flex flex-column  align-items-center justify-content-center mt-3 '>
-      {comments.map((comment) => {
-        return (
-          <Card key={comment.date} className='mt-3'>
-            <p>{comment.nickname}</p>
-            <p>{comment.date.toString()}</p>
-            <p>{comment.comment}</p>
-          </Card>
-        )
-      })}
-    </div>
+    <Card className='w-100 mt-3 '>
+      <Card.Body>
+        <Card.Title>{nickname}</Card.Title>
+        <Card.Text>{comment}</Card.Text>
+      </Card.Body>
+    </Card>
   )
 }
+
 export default SingleComment
