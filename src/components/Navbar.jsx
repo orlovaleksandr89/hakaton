@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import { NavLink, Link } from 'react-router-dom'
 import {
@@ -8,9 +8,7 @@ import {
   USERS_ROUTE
 } from '../utils/const'
 
-function NavBar() {
-  const [active, setActive] = useState()
-
+function NavBar({ active, setActive }) {
   const links = [
     { route: USERS_ROUTE, name: 'Users' },
     { route: FAVORITE_ROUTE, name: 'Favorites' },
