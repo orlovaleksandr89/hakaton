@@ -1,7 +1,7 @@
 import React from 'react'
 import { routes } from '../routes'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { ERROR_ROUTE } from '../utils/const'
+import { MAIN_ROUTE } from '../utils/const'
 
 function AppRouter() {
   return (
@@ -9,7 +9,7 @@ function AppRouter() {
       {routes.map(({ path, Component }) => (
         <Route key={path} path={path} component={Component} exact />
       ))}
-      <Redirect to={ERROR_ROUTE} />
+      <Redirect to={MAIN_ROUTE} />
     </Switch>
   )
 }
