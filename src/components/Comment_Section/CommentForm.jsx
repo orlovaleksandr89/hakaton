@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 
-function CommentForm({ setComments }) {
+function CommentForm({ sendPostToServer, getCommentsFromDB }) {
   const nicknameInputRef = useRef()
   const commentInputRef = useRef()
   const [nickname, setNickName] = useState('')
@@ -30,9 +30,12 @@ function CommentForm({ setComments }) {
     }
     setNickName('')
     setComment('')
-    setComments((prev) => [commentObj, ...prev])
+    sendPostToServer(commentObj)
+    setTimeout(() => {
+      getCommentsFromDB()
+    }, 300)
   }
-  console.log(validated)
+
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className='mb-3'>
@@ -54,7 +57,8 @@ function CommentForm({ setComments }) {
           <Form.Label>Your comment</Form.Label>
           <Form.Control
             required
-            type='text'
+            as='textarea'
+            rows={5}
             placeholder='Leave your comment or feedback'
             ref={commentInputRef}
             value={comment}
