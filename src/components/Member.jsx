@@ -25,7 +25,7 @@ const Member = ({ members }) => {
                   ) : null}
                 </h5>
                 <h5 className="card-tite">{`Возраст: ` + member.age}</h5>
-                <p class="card-text">{`О себе: ` + member.about}</p>
+                <p className="card-text">{`О себе: ` + member.about}</p>
                 <div className="d-flex justify-content-between">
                   <Link
                     to={`users/${member.id}`}
