@@ -1,4 +1,3 @@
-import Photo from "../components/Photos/user.png";
 import PhotoVera from "../components/Photos/vera.jpg";
 import PhotoRuslan from "../components/Photos/ruslan.jpg";
 import PhotoAlex from "../components/Photos/alex.jpg";
@@ -7,12 +6,13 @@ import PhotoNick from "../components/Photos/nick.jpg";
 export const members = [
   {
     id: 1,
-    name: "Alex",
-    age: "x",
+    name: "Олександр Орлов",
+    age: "31",
     image: PhotoAlex,
     about: "Front-End Developer",
-    social: ["telegram", "vk"],
-    tasks: "Задачи проекта",
+    social: ["https://t.me/AlexOrlov89", ""],
+    tasks: " разработка компонента коментариев",
+
     skills: {
       HTML: 100,
       CSS: 100,
@@ -83,6 +83,7 @@ export const members = [
       JavaScript: 100,
       ReactJS: 100,
     },
+
     isLeader: false,
   },
 ];

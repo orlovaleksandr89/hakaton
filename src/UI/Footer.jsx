@@ -6,10 +6,10 @@ function Footer() {
       <ul className='nav col-md-4 justify-content-center list-unstyled d-flex w-100'>
         <li className='ms-3'>
           <div className='d-flex justify-content-between align-items-center'>
-            <span> See code on GitHub for more information</span>
+            <span> Увидеть код можно на </span>
             <h3>
               <a
-                className='text-dark text-decoration-none'
+                className='ms-2 text-dark text-decoration-none'
                 href='https://github.com/orlovaleksandr89/hakaton'
                 target='blank'
               >

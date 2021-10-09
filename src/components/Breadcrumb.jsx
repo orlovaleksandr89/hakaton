@@ -6,7 +6,10 @@ import { MAIN_ROUTE } from '../utils/const'
 function BreadcrumbList(props) {
   const { history, location, setActive } = props
   const { pathname } = location
-  const pathnames = pathname.split('/').filter((path) => path)
+  const pathnames = pathname
+    .split('/')
+    .filter((path) => path)
+    .filter((path) => path !== 'hakaton')
 
   return (
     <Container className='my-2 fw-bold'>
@@ -21,7 +24,7 @@ function BreadcrumbList(props) {
         </Breadcrumb.Item>
         {pathnames.map((item, i) => {
           const lastItem = i === pathnames.length - 1 ? true : false
-          const routeTo = `/${pathnames.slice(0, i + 1).join('/')}`
+          const routeTo = `/hakaton/${pathnames.slice(0, i + 1).join('/')}`
 
           return (
             <Breadcrumb.Item

@@ -38,13 +38,6 @@ const answersList = [
   },
 ];
 
-const chatList = [
-  { id: Date.now(), name: "Вячеслав" },
-  { id: Date.now(), name: "Александр Сергевич" },
-  { id: Date.now(), name: "Ольга" },
-  { id: Date.now(), name: "Анна" },
-];
-
 function App() {
   const [messages, setMessages] = useState([]);
   const [value, setValue] = useState("");
