@@ -1,85 +1,89 @@
-import Photo from '../utils/Photos/user.png'
-import alexPhoto from '../utils/Photos/alex.jpg'
-
+import PhotoVera from "../components/Photos/vera.jpg";
+import PhotoRuslan from "../components/Photos/ruslan.jpg";
+import PhotoAlex from "../components/Photos/alex.jpg";
+import PhotoKirill from "../components/Photos/kirill.jpg";
+import PhotoNick from "../components/Photos/nick.jpg";
 export const members = [
   {
     id: 1,
-    name: 'Олександр Орлов',
-    age: '31',
-    image: alexPhoto,
-    about: 'Front-End Developer',
-    social: ['https://t.me/AlexOrlov89', ''],
-    tasks: ' разработка компонента коментариев',
+    name: "Олександр Орлов",
+    age: "31",
+    image: PhotoAlex,
+    about: "Front-End Developer",
+    social: ["https://t.me/AlexOrlov89", ""],
+    tasks: " разработка компонента коментариев",
+
     skills: {
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100
+      ReactJS: 100,
     },
-    isLeader: true
+    isLeader: true,
   },
   {
     id: 2,
-    name: 'Руслан Прокопец',
+    name: "Руслан Прокопец",
     age: 26,
-    image: Photo,
-    about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    image: PhotoRuslan,
+    about: "Front-End Developer",
+    social: ["telegram", "vk"],
+    tasks: "Задачи проекта",
     skills: {
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100
+      ReactJS: 100,
     },
-    isLeader: false
+    isLeader: false,
   },
   {
     id: 3,
-    name: 'Вера Милякова',
-    age: 'x',
-    image: Photo,
-    about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    name: "Вера Милякова",
+    age: "31",
+    image: PhotoVera,
+    about: "Front-End Developer",
+    social: ["telegram", "vk"],
+    tasks: "Задачи проекта",
     skills: {
-      HTML: 100,
-      CSS: 100,
+      HTML: 90,
+      CSS: 80,
       JavaScript: 100,
-      ReactJS: 100
+      ReactJS: 50,
     },
-    isLeader: false
+    isLeader: false,
   },
   {
     id: 4,
-    name: 'Nick Anufriev',
-    age: 'x',
-    image: Photo,
-    about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    name: "Nick Anufriev",
+    age: "x",
+    image: PhotoNick,
+    about: "Front-End Developer",
+    social: ["telegram", "vk"],
+    tasks: "Задачи проекта",
     skills: {
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100
+      ReactJS: 100,
     },
-    isLeader: false
+    isLeader: false,
   },
   {
     id: 5,
-    name: 'Discipline',
-    age: 'x',
-    image: Photo,
-    about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    name: "Discipline",
+    age: "x",
+    image: PhotoKirill,
+    about: "Front-End Developer",
+    social: ["telegram", "vk"],
+    tasks: "Задачи проекта",
     skills: {
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100
+      ReactJS: 100,
     },
-    isLeader: false
-  }
-]
+
+    isLeader: false,
+  },
+];
