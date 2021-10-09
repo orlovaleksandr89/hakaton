@@ -6,9 +6,7 @@ function SingleUserPage() {
   const { id } = useParams()
 
   return (
-    <div>
-      <MemberRuslan id={id} />
-    </div>
+    <div>{Number(id) === 3 ? 'Компонент Веры' : <MemberRuslan id={id} />}</div>
   )
 }
 

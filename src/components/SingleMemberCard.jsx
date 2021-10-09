@@ -10,9 +10,6 @@ function SingleMemberCard({ member }) {
   const favoriteCtx = useContext(FavoritesContext)
   const userIsFavorite = favoriteCtx.userIsFavorite(member.id)
   const toggleFavoriteUserHandler = () => {
-    console.log(localStorage)
-    console.log(favoriteCtx.favorites)
-
     if (userIsFavorite) {
       favoriteCtx.removeFavorite(member.id)
     } else {
@@ -25,7 +22,7 @@ function SingleMemberCard({ member }) {
         <img
           src={member.image}
           className='img-fluid w-50 bg-dark rounded-circle mx-auto m-2'
-          alt=''
+          alt={member.id}
         />
 
         <div className='card-body shadow'>

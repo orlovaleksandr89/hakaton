@@ -12,8 +12,8 @@ const MemberRuslan = ({ id }) => {
   }
   return (
     <div className='container mx-auto w-100 shadow p-5'>
-      <div className='d-flex justify-content-between align-items-center'>
-        <div>
+      <div className='row justify-content-between align-items-center'>
+        <div className='col-md-6'>
           <h1>
             {memberById.name}
             {memberById.isLeader ? (
@@ -25,12 +25,13 @@ const MemberRuslan = ({ id }) => {
           <span>{`Возраст: ` + memberById.age}</span>
           <p>{`О себе: ` + memberById.about}</p>
         </div>
-        <div className='d-flex flex-column align-items-center'>
+        <div className='col-md-6 d-flex flex-column align-items-center'>
           <div>
             <img
+              className='img-fluid'
               src={memberById.image}
               alt={memberById.id}
-              style={{ height: 300, borderRadius: 150 }}
+              style={{ maxHeight: 300, borderRadius: 150 }}
             />
           </div>
           <div>
