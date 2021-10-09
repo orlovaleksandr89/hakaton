@@ -1,0 +1,86 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.left-block-title {
+  margin-bottom: 20px;
+}
+
+.left-block-about {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.photo-img {
+  max-height: 200px;
+  max-width: 200px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  padding: 5px 0px;
+  width: 200px;
+  border: none;
+  background-color: skyblue;
+  margin-top: 5px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background-color: skyblue;
+  padding: 6px;
+}
+
+.social-icon:hover {
+  color: #fcd19e;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-block-tasks {
+  max-width: 600px;
+}
+
+.progressBar {
+  margin-top: 40px;
+}
+
+.progress-block-span {
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-block-content {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .right-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}

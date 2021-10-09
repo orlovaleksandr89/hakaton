@@ -5,7 +5,7 @@ import BadgeMember from './Badge'
 
 function SingleMemberCard({ member }) {
   const styles = {
-    width: '20rem'
+    width: '20rem',
   }
   const favoriteCtx = useContext(FavoritesContext)
   const userIsFavorite = favoriteCtx.userIsFavorite(member.id)
@@ -30,9 +30,17 @@ function SingleMemberCard({ member }) {
           <h5 className='card-title'>
             {member.name}
             {member.isLeader ? (
-              <BadgeMember color='success' text='Team Leader' />
+              <BadgeMember
+                castomStyle='ms-2'
+                color='success'
+                text='Team Leader'
+              />
             ) : (
-              <BadgeMember color='warning' text='Developer' />
+              <BadgeMember
+                castomStyle='ms-2'
+                color='warning'
+                text='Developer'
+              />
             )}
           </h5>
           <h5 className='card-tite'>{`Возраст: ` + member.age}</h5>
@@ -47,8 +55,7 @@ function SingleMemberCard({ member }) {
               }}
               className={`btn btn-sm ${
                 userIsFavorite ? 'btn-danger' : 'btn-success'
-              }`}
-            >
+              }`}>
               {userIsFavorite
                 ? 'Удалить из избранного'
                 : 'Добавить в избранное'}

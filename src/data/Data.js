@@ -7,11 +7,12 @@ import PhotoNick from '../components/Photos/nick.jpg'
 export const members = [
   {
     id: 1,
+    town: '',
     name: 'Олександр Орлов',
     age: '31',
     image: PhotoAlex,
     about: 'Front-End Developer',
-    social: ['https://t.me/AlexOrlov89', ''],
+    social: { telegram: '', github: '', linkedin: '' },
     tasks: ' разработка компонента коментариев',
 
     skills: {
@@ -24,11 +25,12 @@ export const members = [
   },
   {
     id: 2,
+    town: '',
     name: 'Руслан Прокопец',
     age: 26,
     image: PhotoRuslan,
     about: 'Front-End Developer',
-    social: ['https://t.me/Kyoto430', ''],
+    social: { telegram: '', github: '', linkedin: '' },
     tasks: ' разработка компонента карточек команды',
     skills: {
       HTML: 100,
@@ -40,11 +42,12 @@ export const members = [
   },
   {
     id: 3,
+    town: '',
     name: 'Вера Милякова',
     age: '31',
     image: PhotoVera,
     about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
+    social: { telegram: '', github: '', linkedin: '' },
     tasks: 'Задачи проекта',
     skills: {
       HTML: 90,
@@ -56,11 +59,12 @@ export const members = [
   },
   {
     id: 4,
+    town: '',
     name: 'Nick Anufriev',
     age: 'x',
     image: PhotoNick,
     about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
+    social: { telegram: '', github: '', linkedin: '' },
     tasks: 'Задачи проекта',
     skills: {
       HTML: 100,
@@ -72,12 +76,18 @@ export const members = [
   },
   {
     id: 5,
-    name: 'Discipline',
-    age: 'x',
+    name: 'Кирилл Бароха',
+    town: 'Новополоцк',
+    age: '27',
     image: PhotoKirill,
     about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    social: {
+      telegram: 'https://t.me/Barokha_Kiryl',
+      github: '',
+      linkedin: '',
+    },
+    tasks:
+      'Задачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проектаЗадачи проекта',
     skills: {
       HTML: 100,
       CSS: 100,

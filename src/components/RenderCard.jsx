@@ -6,6 +6,7 @@ import { ProgressBar } from 'react-bootstrap'
 import BadgeMember from './Badge'
 import { Link } from 'react-router-dom'
 import { PERSONAL_USER_ROUTE } from '../utils/const'
+import './styles/RenderCard.css'
 
 const RenderCard = ({ id }) => {
   const memberById = getMemberById(members, id)
@@ -13,47 +14,58 @@ const RenderCard = ({ id }) => {
     return <PageError />
   }
   return (
-    <div className="container mx-auto w-100 shadow p-5">
-      <div className="row justify-content-between align-items-center">
-        <div className="col-md-6">
-          <h1>
-            {memberById.name}
+    <div className='block__user-card w-100 shadow p-4 mb-5'>
+      <section className='info'>
+        <div className='left-block'>
+          <div className='left-block-title'>
+            <h1>{memberById.name}</h1>
             {memberById.isLeader ? (
-              <BadgeMember color="success" text="Team Leader" />
+              <BadgeMember
+                castomStyle='badge-renderCard'
+                color='success'
+                text='Team Leader'
+              />
             ) : (
-              <BadgeMember color="warning" text="Developer" />
+              <BadgeMember
+                castomStyle='badge-renderCard'
+                color='warning'
+                text='DEVELOPER'
+              />
             )}
-          </h1>
-          <span>{`Возраст: ` + memberById.age}</span>
-          <p>{`О себе: ` + memberById.about}</p>
-          <div>
-            <h5>{`Задачи на проекте: ` + memberById.tasks}</h5>
+          </div>
+          <div className='left-block-about'>
+            <span>{`Город: ` + memberById.town}</span>
+            <span>{`Возраст: ` + memberById.age}</span>
+            <span>{`О себе: ` + memberById.about}</span>
+          </div>
+          <div className='left-block-tasks'>
+            <h5>Задачи на проекте:</h5>
+            <p>{memberById.tasks}</p>
           </div>
         </div>
-        <div className="col-md-6 d-flex flex-column align-items-center">
-          <div>
+        <div className='right-block'>
+          <div className='photo'>
             <img
-              className="img-fluid"
+              className='photo-img'
               src={memberById.image}
               alt={memberById.id}
-              style={{ maxHeight: 300, borderRadius: 150 }}
             />
           </div>
-          <div>
-            {memberById.social.map((element) => (
-              <a key={element} href={element} className="m-1">
-                {element}
-              </a>
+          <div className='social'>
+            {Object.keys(memberById.social).map((item) => (
+              <a
+                href={memberById.social[item]}
+                className={'social-icon fab fa-' + String(item)}></a>
             ))}
           </div>
         </div>
-      </div>
-      <div>
-        <div>
-          <h4>Технологии:</h4>
-          <div className="w-100 mx-auto">
+      </section>
+      <section className='progressBar'>
+        <div className='progress-block'>
+          <span className='progress-block-span'>технологии</span>
+          <div className='progress-block-content'>
             {Object.keys(memberById.skills).map((skill) => (
-              <div key={skill}>
+              <div key={skill} className='mt-2'>
                 <h6>{skill}</h6>
                 <ProgressBar
                   now={memberById.skills[skill]}
@@ -62,8 +74,12 @@ const RenderCard = ({ id }) => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <div>
+        <div>
           {Number(id) === 3 ? (
-            <Link to={PERSONAL_USER_ROUTE} className="btn btn-primary m-2">
+            <Link to={PERSONAL_USER_ROUTE} className='btn btn-primary m-2'>
               <h3>Перейти в мой компонент</h3>
             </Link>
           ) : null}
