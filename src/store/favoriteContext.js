@@ -13,20 +13,16 @@ export function FavoritesContextProvider(props) {
 
   function addFavotiteHandler(favoriteUser) {
     localStorage.setItem(favoriteUser.id, JSON.stringify(favoriteUser))
-    setFavorites((prev) => {
-      return prev.concat(favoriteUser)
-    })
+    return setFavorites((prev) => [...prev, favoriteUser])
   }
 
   function removeFavoriteHandler(id) {
     localStorage.removeItem(id)
-    setFavorites((prev) => {
-      return prev.filter((user) => user.id !== id)
-    })
+    return setFavorites(favorites.filter((user) => user.id !== id))
   }
 
   function userIsFavoriteHandler(id) {
-    return favorites.some((user) => user.id === id)
+    return favorites.some((user) => user.id === id) || localStorage.getItem(id)
   }
 
   const context = {

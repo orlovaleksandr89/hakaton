@@ -16,6 +16,7 @@ function NavBar({ active, setActive }) {
     { route: COMMENT_ROUTE, name: 'Оставить комментарий' }
   ]
   const favoriteCtx = useContext(FavoritesContext)
+  const total = localStorage.length
 
   return (
     <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
@@ -59,9 +60,9 @@ function NavBar({ active, setActive }) {
                     {link.name === 'Избранное' ? (
                       <>
                         {link.name}
-                        {favoriteCtx.totalFavorites ? (
+                        {favoriteCtx.totalFavorites || localStorage.length ? (
                           <span className='position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger'>
-                            {favoriteCtx.totalFavorites}
+                            {total}
                             <span className='visually-hidden'>
                               unread messages
                             </span>

@@ -1,8 +1,8 @@
-.App {
+.app {
   margin: 0;
   color: azure;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,10 +14,14 @@
     #2d1a64,
     #38055e
   );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 /* .list {
@@ -26,10 +30,11 @@ code {
   padding: 0;
   font-size: 1.5rem;
 } */
-.main-block {
+.main_block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.5rem;
 }
 /* .App {
   text-align: center;
@@ -43,8 +48,9 @@ code {
   background-color: rgb(106, 205, 214);
   font-size: large;
   color: azure;
+  margin-top: 0.5rem;
 }
-.input {
+input {
   padding: 10px 10px;
   color: azure;
 }
@@ -52,8 +58,8 @@ code {
   margin: 20px;
 }
 .header {
-  font-family: "Niconne", cursive;
-  font-size: 90px;
+  font-family: 'Niconne', cursive;
+  font-size: 2.5rem;
 }
 .container {
   display: flex;
@@ -67,6 +73,9 @@ code {
 } */
 .form {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #outlined-basic {
   color: azure;

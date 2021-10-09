@@ -30,8 +30,7 @@ function MainPage() {
           </ul>
           <p>
             Если вам понравился наш проект, пожалуйста{' '}
-            <Link to={COMMENT_ROUTE}>оставте комментарий</Link> в секции для
-            коментариев
+            <Link to={COMMENT_ROUTE}>оставте комментарий</Link>
           </p>
         </div>
       </div>

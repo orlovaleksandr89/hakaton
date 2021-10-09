@@ -16,6 +16,7 @@ function SingleMemberCard({ member }) {
       favoriteCtx.addFavorite(member)
     }
   }
+
   return (
     <div key={member.id} className='m-2'>
       <div className='card' style={styles}>
@@ -42,7 +43,7 @@ function SingleMemberCard({ member }) {
             </Link>
             <button
               onClick={() => {
-                toggleFavoriteUserHandler()
+                toggleFavoriteUserHandler(member.id)
               }}
               className={`btn btn-sm ${
                 userIsFavorite ? 'btn-danger' : 'btn-success'
