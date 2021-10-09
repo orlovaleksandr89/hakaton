@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/hakaton/static/css/main.1f1da589.chunk.css",
-    "main.js": "/hakaton/static/js/main.b12f9a1b.chunk.js",
-    "main.js.map": "/hakaton/static/js/main.b12f9a1b.chunk.js.map",
-    "runtime-main.js": "/hakaton/static/js/runtime-main.d54d3319.js",
-    "runtime-main.js.map": "/hakaton/static/js/runtime-main.d54d3319.js.map",
+    "main.css": "/hakaton/static/css/main.c98c2f3e.chunk.css",
+    "main.js": "/hakaton/static/js/main.d9c027b1.chunk.js",
+    "main.js.map": "/hakaton/static/js/main.d9c027b1.chunk.js.map",
+    "runtime-main.js": "/hakaton/static/js/runtime-main.248adbb5.js",
+    "runtime-main.js.map": "/hakaton/static/js/runtime-main.248adbb5.js.map",
     "static/css/2.c1256375.chunk.css": "/hakaton/static/css/2.c1256375.chunk.css",
-    "static/js/2.826dd641.chunk.js": "/hakaton/static/js/2.826dd641.chunk.js",
-    "static/js/2.826dd641.chunk.js.map": "/hakaton/static/js/2.826dd641.chunk.js.map",
-    "static/js/3.560b64be.chunk.js": "/hakaton/static/js/3.560b64be.chunk.js",
-    "static/js/3.560b64be.chunk.js.map": "/hakaton/static/js/3.560b64be.chunk.js.map",
+    "static/js/2.f8361f51.chunk.js": "/hakaton/static/js/2.f8361f51.chunk.js",
+    "static/js/2.f8361f51.chunk.js.map": "/hakaton/static/js/2.f8361f51.chunk.js.map",
+    "static/js/3.35d1f033.chunk.js": "/hakaton/static/js/3.35d1f033.chunk.js",
+    "static/js/3.35d1f033.chunk.js.map": "/hakaton/static/js/3.35d1f033.chunk.js.map",
     "index.html": "/hakaton/index.html",
     "static/css/2.c1256375.chunk.css.map": "/hakaton/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.1f1da589.chunk.css.map": "/hakaton/static/css/main.1f1da589.chunk.css.map",
-    "static/js/2.826dd641.chunk.js.LICENSE.txt": "/hakaton/static/js/2.826dd641.chunk.js.LICENSE.txt",
-    "static/media/alex.1c6af1a2.jpg": "/hakaton/static/media/alex.1c6af1a2.jpg"
+    "static/css/main.c98c2f3e.chunk.css.map": "/hakaton/static/css/main.c98c2f3e.chunk.css.map",
+    "static/js/2.f8361f51.chunk.js.LICENSE.txt": "/hakaton/static/js/2.f8361f51.chunk.js.LICENSE.txt",
+    "static/media/alex.fd1cbd40.jpg": "/hakaton/static/media/alex.fd1cbd40.jpg",
+    "static/media/crystal-ball.994c7e55.png": "/hakaton/static/media/crystal-ball.994c7e55.png",
+    "static/media/kirill.8f7769eb.jpg": "/hakaton/static/media/kirill.8f7769eb.jpg",
+    "static/media/nick.7af8adde.jpg": "/hakaton/static/media/nick.7af8adde.jpg",
+    "static/media/ruslan.467e265f.jpg": "/hakaton/static/media/ruslan.467e265f.jpg",
+    "static/media/vera.8fe6dc79.jpg": "/hakaton/static/media/vera.8fe6dc79.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d54d3319.js",
+    "static/js/runtime-main.248adbb5.js",
     "static/css/2.c1256375.chunk.css",
-    "static/js/2.826dd641.chunk.js",
-    "static/css/main.1f1da589.chunk.css",
-    "static/js/main.b12f9a1b.chunk.js"
+    "static/js/2.f8361f51.chunk.js",
+    "static/css/main.c98c2f3e.chunk.css",
+    "static/js/main.d9c027b1.chunk.js"
   ]
 }
