@@ -1,8 +1,12 @@
 import React from 'react'
 import { Badge } from 'react-bootstrap'
 
-const BadgeMember = ({ color, text }) => {
-  return <Badge className='ms-2' bg={color}>{text}</Badge>
+const BadgeMember = ({ castomStyle, color, text }) => {
+  return (
+    <Badge className={castomStyle} bg={color}>
+      {text}
+    </Badge>
+  )
 }
 
 export default BadgeMember
