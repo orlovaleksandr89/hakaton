@@ -1,21 +1,22 @@
-import Photo from '../components/Photos/user.png'
+import Photo from '../utils/Photos/user.png'
+import alexPhoto from '../utils/Photos/alex.jpg'
 
 export const members = [
   {
     id: 1,
-    name: 'Alex',
-    age: 'x',
-    image: Photo,
+    name: 'Олександр Орлов',
+    age: '31',
+    image: alexPhoto,
     about: 'Front-End Developer',
-    social: ['telegram', 'vk'],
-    tasks: 'Задачи проекта',
+    social: ['https://t.me/AlexOrlov89', ''],
+    tasks: ' разработка компонента коментариев',
     skills: {
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: true,
+    isLeader: true
   },
   {
     id: 2,
@@ -29,9 +30,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 3,
@@ -45,9 +46,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 4,
@@ -61,9 +62,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 5,
@@ -77,8 +78,8 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: false,
-  },
+    isLeader: false
+  }
 ]

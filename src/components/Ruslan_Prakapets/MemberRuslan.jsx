@@ -11,25 +11,31 @@ const MemberRuslan = ({ id }) => {
     return <PageError />
   }
   return (
-    <div className="container mx-auto w-100 shadow p-5">
-      <div className="d-flex justify-content-between align-items-center">
+    <div className='container mx-auto w-100 shadow p-5'>
+      <div className='d-flex justify-content-between align-items-center'>
         <div>
           <h1>
             {memberById.name}
             {memberById.isLeader ? (
-              <BadgeMember color="success" text="Team Leader" />
-            ) : <BadgeMember color='warning' text='Developer' />}
+              <BadgeMember color='success' text='Team Leader' />
+            ) : (
+              <BadgeMember color='warning' text='Developer' />
+            )}
           </h1>
           <span>{`Возраст: ` + memberById.age}</span>
           <p>{`О себе: ` + memberById.about}</p>
         </div>
-        <div className="d-flex flex-column align-items-center">
+        <div className='d-flex flex-column align-items-center'>
           <div>
-            <img src={memberById.image} alt="" />
+            <img
+              src={memberById.image}
+              alt={memberById.id}
+              style={{ height: 300, borderRadius: 150 }}
+            />
           </div>
           <div>
             {memberById.social.map((element) => (
-              <a key={element} href="/" className="m-1">
+              <a key={element} href='/' className='m-1'>
                 {element}
               </a>
             ))}
@@ -40,9 +46,9 @@ const MemberRuslan = ({ id }) => {
       <div>
         <span>{`Задачи на проекте: ` + memberById.tasks}</span>
       </div>
-      <div className="border-top mt-2">
+      <div className='border-top mt-2'>
         <h4>Технологии:</h4>
-        <div className="w-100 mx-auto">
+        <div className='w-100 mx-auto'>
           {Object.keys(memberById.skills).map((skill) => (
             <div key={skill}>
               <h6>{skill}</h6>

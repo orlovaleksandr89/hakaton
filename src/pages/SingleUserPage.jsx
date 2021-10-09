@@ -7,7 +7,6 @@ function SingleUserPage() {
 
   return (
     <div>
-      user id = {id}
       <MemberRuslan id={id} />
     </div>
   )
