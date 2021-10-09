@@ -1,8 +1,11 @@
-import PhotoVera from '../components/Photos/vera.jpg'
-import PhotoRuslan from '../components/Photos/ruslan.jpg'
-import PhotoAlex from '../components/Photos/alex.jpg'
-import PhotoKirill from '../components/Photos/kirill.jpg'
-import PhotoNick from '../components/Photos/nick.jpg'
+
+import PhotoVera from "../components/Photos/vera.jpg";
+import PhotoRuslan from "../components/Photos/ruslan.jpg";
+import PhotoAlex from "../components/Photos/alex.jpg";
+import PhotoKirill from "../components/Photos/kirill.jpg";
+import PhotoNick from "../components/Photos/nick.jpg";
+
+
 export const members = [
   {
     id: 1,
@@ -86,4 +89,13 @@ export const members = [
 
     isLeader: false,
   },
-]
+
+];
+
+export const fetchAll = () =>
+  new Promise((resolve) => {
+    window.setTimeout(function () {
+      resolve(members);
+    }, 1500);
+  });
+
