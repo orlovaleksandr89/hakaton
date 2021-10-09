@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { COMMENT_ROUTE } from '../utils/const'
+import reactLogo from '../components/Photos/logo512.png'
 
 function MainPage() {
   return (
@@ -10,6 +11,10 @@ function MainPage() {
           <h4 className='text-center border-bottom pb-4 shadow-sm'>
             Немного о нашей команде
           </h4>
+
+          <div className='d-flex align-items-center justify-content-center'>
+            <img className='App-logo' src={reactLogo} alt='reactLogo' />
+          </div>
           <p>
             Вашему вниманию представляется проект который разработала наша
             команда в составе:

@@ -1,10 +1,8 @@
-
-import PhotoVera from "../components/Photos/vera.jpg";
-import PhotoRuslan from "../components/Photos/ruslan.jpg";
-import PhotoAlex from "../components/Photos/alex.jpg";
-import PhotoKirill from "../components/Photos/kirill.jpg";
-import PhotoNick from "../components/Photos/nick.jpg";
-
+import PhotoVera from '../components/Photos/vera.jpg'
+import PhotoRuslan from '../components/Photos/ruslan.jpg'
+import PhotoAlex from '../components/Photos/alex.jpg'
+import PhotoKirill from '../components/Photos/kirill.jpg'
+import PhotoNick from '../components/Photos/nick.jpg'
 
 export const members = [
   {
@@ -20,9 +18,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: true,
+    isLeader: true
   },
   {
     id: 2,
@@ -36,9 +34,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 80,
-      ReactJS: 50,
+      ReactJS: 50
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 3,
@@ -52,9 +50,9 @@ export const members = [
       HTML: 90,
       CSS: 80,
       JavaScript: 100,
-      ReactJS: 50,
+      ReactJS: 50
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 4,
@@ -68,9 +66,9 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
-    isLeader: false,
+    isLeader: false
   },
   {
     id: 5,
@@ -84,18 +82,16 @@ export const members = [
       HTML: 100,
       CSS: 100,
       JavaScript: 100,
-      ReactJS: 100,
+      ReactJS: 100
     },
 
-    isLeader: false,
-  },
-
-];
+    isLeader: false
+  }
+]
 
 export const fetchAll = () =>
   new Promise((resolve) => {
     window.setTimeout(function () {
-      resolve(members);
-    }, 1500);
-  });
-
+      resolve(members)
+    }, 500)
+  })
