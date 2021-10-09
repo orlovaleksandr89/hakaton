@@ -1,0 +1,67 @@
+.App {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to left bottom,
+    #1c3866,
+    #1c3067,
+    #232667,
+    #2d1a64,
+    #38055e
+  );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* .list {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+} */
+.main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .App {
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 1.5em;
+  color: rgb(189, 195, 201);
+}
+.btn {
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: rgb(106, 205, 214);
+  font-size: large;
+} */
+.input {
+  padding: 10px 10px;
+}
+.message {
+  margin: 20px;
+}
+.header {
+  font-family: "Niconne", cursive;
+  font-size: 90px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.chatList {
+  background-color: rgb(189, 195, 201);
+  border-radius: 20px;
+  color: #232667;
+  padding-bottom: 50px;
+}
+.form {
+  margin-top: 50px;
+}

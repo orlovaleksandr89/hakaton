@@ -1,14 +1,16 @@
-import React from 'react'
-import { members } from '../../data/Data'
-import { getMemberById } from '../../utils/functions'
-import PageError from '../../pages/ErrorPage'
-import { ProgressBar } from 'react-bootstrap'
-import BadgeMember from '../Badge'
+import React from "react";
+import { members } from "../../data/Data";
+import { getMemberById } from "../../utils/functions";
+import PageError from "../../pages/ErrorPage";
+import { ProgressBar } from "react-bootstrap";
+import BadgeMember from "../Badge";
+import { Link } from "react-router-dom";
+import { PERSONAL_USER_ROUTE } from "../../utils/const";
 
 const MemberRuslan = ({ id }) => {
-  const memberById = getMemberById(members, id)
+  const memberById = getMemberById(members, id);
   if (!memberById?.id) {
-    return <PageError />
+    return <PageError />;
   }
   return (
     <div className="container mx-auto w-100 shadow p-5">
@@ -18,7 +20,9 @@ const MemberRuslan = ({ id }) => {
             {memberById.name}
             {memberById.isLeader ? (
               <BadgeMember color="success" text="Team Leader" />
-            ) : <BadgeMember color='warning' text='Developer' />}
+            ) : (
+              <BadgeMember color="warning" text="Developer" />
+            )}
           </h1>
           <span>{`Возраст: ` + memberById.age}</span>
           <p>{`О себе: ` + memberById.about}</p>
@@ -54,8 +58,13 @@ const MemberRuslan = ({ id }) => {
           ))}
         </div>
       </div>
+      {Number(id) === 3 ? (
+        <Link to={PERSONAL_USER_ROUTE} className="btn btn-primary m-2">
+          <h3>Перейти в мой компонент</h3>
+        </Link>
+      ) : null}
     </div>
-  )
-}
+  );
+};
 
-export default MemberRuslan
+export default MemberRuslan;

@@ -1,17 +1,19 @@
-import CommentPage from './pages/CommentPage'
-import ErrorPage from './pages/ErrorPage'
-import FavoritePage from './pages/FavoritePage'
-import MainPage from './pages/MainPage'
-import SingleUserPage from './pages/SingleUserPage'
-import UsersPage from './pages/UsersPage'
+import CommentPage from "./pages/CommentPage";
+import ErrorPage from "./pages/ErrorPage";
+import FavoritePage from "./pages/FavoritePage";
+import MainPage from "./pages/MainPage";
+import SingleUserPage from "./pages/SingleUserPage";
+import UsersPage from "./pages/UsersPage";
+import PersonalComponent from "./components/Vera_Milyakova/Seance";
 import {
   COMMENT_ROUTE,
   ERROR_ROUTE,
   FAVORITE_ROUTE,
   MAIN_ROUTE,
   SINGLE_USER_ROUTE,
-  USERS_ROUTE
-} from './utils/const'
+  USERS_ROUTE,
+  PERSONAL_USER_ROUTE,
+} from "./utils/const";
 
 export const routes = [
   { path: MAIN_ROUTE, Component: MainPage },
@@ -19,5 +21,6 @@ export const routes = [
   { path: SINGLE_USER_ROUTE, Component: SingleUserPage },
   { path: ERROR_ROUTE, Component: ErrorPage },
   { path: FAVORITE_ROUTE, Component: FavoritePage },
-  { path: COMMENT_ROUTE, Component: CommentPage }
-]
+  { path: COMMENT_ROUTE, Component: CommentPage },
+  { path: PERSONAL_USER_ROUTE, Component: PersonalComponent },
+];
