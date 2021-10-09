@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hakaton/static/css/main.c98c2f3e.chunk.css",
-    "main.js": "/hakaton/static/js/main.d9c027b1.chunk.js",
-    "main.js.map": "/hakaton/static/js/main.d9c027b1.chunk.js.map",
+    "main.css": "/hakaton/static/css/main.0a922ad7.chunk.css",
+    "main.js": "/hakaton/static/js/main.de338122.chunk.js",
+    "main.js.map": "/hakaton/static/js/main.de338122.chunk.js.map",
     "runtime-main.js": "/hakaton/static/js/runtime-main.248adbb5.js",
     "runtime-main.js.map": "/hakaton/static/js/runtime-main.248adbb5.js.map",
     "static/css/2.c1256375.chunk.css": "/hakaton/static/css/2.c1256375.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.35d1f033.chunk.js.map": "/hakaton/static/js/3.35d1f033.chunk.js.map",
     "index.html": "/hakaton/index.html",
     "static/css/2.c1256375.chunk.css.map": "/hakaton/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.c98c2f3e.chunk.css.map": "/hakaton/static/css/main.c98c2f3e.chunk.css.map",
+    "static/css/main.0a922ad7.chunk.css.map": "/hakaton/static/css/main.0a922ad7.chunk.css.map",
     "static/js/2.f8361f51.chunk.js.LICENSE.txt": "/hakaton/static/js/2.f8361f51.chunk.js.LICENSE.txt",
     "static/media/alex.fd1cbd40.jpg": "/hakaton/static/media/alex.fd1cbd40.jpg",
     "static/media/crystal-ball.994c7e55.png": "/hakaton/static/media/crystal-ball.994c7e55.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.248adbb5.js",
     "static/css/2.c1256375.chunk.css",
     "static/js/2.f8361f51.chunk.js",
-    "static/css/main.c98c2f3e.chunk.css",
-    "static/js/main.d9c027b1.chunk.js"
+    "static/css/main.0a922ad7.chunk.css",
+    "static/js/main.de338122.chunk.js"
   ]
 }
