@@ -25,7 +25,7 @@ function FavoriteCard({ member, removeFavorite }) {
           className='my-2 d-flex justify-content-center align-items-center'
         >
           <h3 className='text-center'>{member.name}</h3>
-          <p className='text-center'>{member.about}</p>
+          <p className='text-center mt-3 ms-2'>{member.about}</p>
         </Col>
         <Col
           md={2}
