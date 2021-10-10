@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/hakaton/static/css/main.ed813950.chunk.css",
-    "main.js": "/hakaton/static/js/main.be96fcfd.chunk.js",
-    "main.js.map": "/hakaton/static/js/main.be96fcfd.chunk.js.map",
-    "runtime-main.js": "/hakaton/static/js/runtime-main.da57bed5.js",
-    "runtime-main.js.map": "/hakaton/static/js/runtime-main.da57bed5.js.map",
+    "main.css": "/hakaton/static/css/main.1d53260f.chunk.css",
+    "main.js": "/hakaton/static/js/main.6dafa6da.chunk.js",
+    "main.js.map": "/hakaton/static/js/main.6dafa6da.chunk.js.map",
+    "runtime-main.js": "/hakaton/static/js/runtime-main.077b6660.js",
+    "runtime-main.js.map": "/hakaton/static/js/runtime-main.077b6660.js.map",
     "static/css/2.c1256375.chunk.css": "/hakaton/static/css/2.c1256375.chunk.css",
-    "static/js/2.cc274f73.chunk.js": "/hakaton/static/js/2.cc274f73.chunk.js",
-    "static/js/2.cc274f73.chunk.js.map": "/hakaton/static/js/2.cc274f73.chunk.js.map",
-    "static/js/3.083bd8b6.chunk.js": "/hakaton/static/js/3.083bd8b6.chunk.js",
-    "static/js/3.083bd8b6.chunk.js.map": "/hakaton/static/js/3.083bd8b6.chunk.js.map",
+    "static/js/2.e179d67e.chunk.js": "/hakaton/static/js/2.e179d67e.chunk.js",
+    "static/js/2.e179d67e.chunk.js.map": "/hakaton/static/js/2.e179d67e.chunk.js.map",
+    "static/js/3.1608ef1c.chunk.js": "/hakaton/static/js/3.1608ef1c.chunk.js",
+    "static/js/3.1608ef1c.chunk.js.map": "/hakaton/static/js/3.1608ef1c.chunk.js.map",
     "index.html": "/hakaton/index.html",
     "static/css/2.c1256375.chunk.css.map": "/hakaton/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.ed813950.chunk.css.map": "/hakaton/static/css/main.ed813950.chunk.css.map",
-    "static/js/2.cc274f73.chunk.js.LICENSE.txt": "/hakaton/static/js/2.cc274f73.chunk.js.LICENSE.txt",
+    "static/css/main.1d53260f.chunk.css.map": "/hakaton/static/css/main.1d53260f.chunk.css.map",
+    "static/js/2.e179d67e.chunk.js.LICENSE.txt": "/hakaton/static/js/2.e179d67e.chunk.js.LICENSE.txt",
     "static/media/alex.fd1cbd40.jpg": "/hakaton/static/media/alex.fd1cbd40.jpg",
     "static/media/crystal-ball.994c7e55.png": "/hakaton/static/media/crystal-ball.994c7e55.png",
     "static/media/kirill.8f7769eb.jpg": "/hakaton/static/media/kirill.8f7769eb.jpg",
@@ -22,10 +22,10 @@
     "static/media/vera.8fe6dc79.jpg": "/hakaton/static/media/vera.8fe6dc79.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.da57bed5.js",
+    "static/js/runtime-main.077b6660.js",
     "static/css/2.c1256375.chunk.css",
-    "static/js/2.cc274f73.chunk.js",
-    "static/css/main.ed813950.chunk.css",
-    "static/js/main.be96fcfd.chunk.js"
+    "static/js/2.e179d67e.chunk.js",
+    "static/css/main.1d53260f.chunk.css",
+    "static/js/main.6dafa6da.chunk.js"
   ]
 }
