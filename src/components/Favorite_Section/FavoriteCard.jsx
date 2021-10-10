@@ -22,10 +22,10 @@ function FavoriteCard({ member, removeFavorite }) {
         </Col>
         <Col
           md={4}
-          className='my-2 d-flex justify-content-between align-items-center'
+          className='my-2 d-flex justify-content-center align-items-center'
         >
-          <h3>{member.name}</h3>
-          <p>{member.about}</p>
+          <h3 className='text-center'>{member.name}</h3>
+          <p className='text-center'>{member.about}</p>
         </Col>
         <Col
           md={2}

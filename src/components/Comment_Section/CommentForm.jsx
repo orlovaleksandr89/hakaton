@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
+import moment from 'moment'
 
 function CommentForm({ sendPostToServer, getCommentsFromDB }) {
   const nicknameInputRef = useRef()
   const commentInputRef = useRef()
   const [nickname, setNickName] = useState('')
   const [comment, setComment] = useState('')
+  const thisMoment = moment().format('MMMM Do YYYY, h:mm:ss a')
 
   const [validated, setValidated] = useState(false)
 
@@ -26,7 +28,7 @@ function CommentForm({ sendPostToServer, getCommentsFromDB }) {
     const commentObj = {
       nickname: enteredNickname,
       comment: enteredComment,
-      date: new Date()
+      date: thisMoment
     }
     setNickName('')
     setComment('')

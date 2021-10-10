@@ -6,7 +6,8 @@ function SingleComment({ nickname, date, comment }) {
     <Card className='w-100 mt-3 '>
       <Card.Body>
         <Card.Title>{nickname}</Card.Title>
-        <Card.Text>{comment}</Card.Text>
+        <Card.Text className='border-bottom mb-2'>{date}</Card.Text>
+        <Card.Text className='mt-2'>{comment}</Card.Text>
       </Card.Body>
     </Card>
   )

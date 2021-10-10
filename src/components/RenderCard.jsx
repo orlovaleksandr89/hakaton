@@ -52,11 +52,13 @@ const RenderCard = ({ id }) => {
             />
           </div>
           <div className='social'>
-            {Object.keys(memberById.social).map((item) => (
-              <a
-                href={memberById.social[item]}
-                className={'social-icon fab fa-' + String(item)}></a>
-            ))}
+            {Object.keys(memberById.social).map((item) => {
+              return (
+                <a href={memberById.social[item]} target='blank' key={item}>
+                  <i className={'social-icon fab fa-' + String(item)}></i>
+                </a>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -77,10 +79,12 @@ const RenderCard = ({ id }) => {
         </div>
       </section>
       <div>
-        <div>
+        <div className='d-flex justify-content-center m-2'>
           {Number(id) === 3 ? (
-            <Link to={PERSONAL_USER_ROUTE} className='btn btn-primary m-2'>
-              <h3>Перейти в мой компонент</h3>
+            <Link to={PERSONAL_USER_ROUTE}>
+              <button className='btn btn-primary m-2'>
+                Перейти в личный компонент
+              </button>
             </Link>
           ) : null}
         </div>
